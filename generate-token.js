@@ -6,5 +6,5 @@ var promptSync = prompt();
 var email = promptSync("Enter your email: ");
 var password = promptSync("Enter your password: ");
 
-var token = generateToken(email, password);
+var token = await generateToken({email, password});
 console.log(token);
